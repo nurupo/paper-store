@@ -1,0 +1,14 @@
+language: generic
+
+sudo: required
+
+services:
+  - docker
+
+matrix:
+  include:
+    - env: VERSION=sparse
+    - env: VERSION=dense
+
+script:
+  - ./.travis/script.sh
