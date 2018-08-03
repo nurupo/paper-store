@@ -80,7 +80,7 @@ Even if it's encrypted already, like the passphrase-protected GPG keystore, you 
 You can use GPG to password-protect your file like this
 
 ```bash
-gpg --symmetric --cipher-algo AES256 --s2k-digest-algo SH512 <file-to-encrypt>
+gpg --symmetric --cipher-algo AES256 --s2k-digest-algo SHA512 <file-to-encrypt>
 ```
 
 This will encrypt the file with a symmetric AES256 cipher.
